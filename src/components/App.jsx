@@ -34,7 +34,6 @@ export class App extends Component {
       const prevContacts = prevState.contacts;
       const nextContacts = this.state.contacts;
       if(nextContacts !== prevContacts) {
-        console.log("Oбновились контакты");
         localStorage.setItem('contacts', JSON.stringify(nextContacts))
       };
   
